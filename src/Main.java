@@ -1,8 +1,19 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scanez = new Scanner(System.in);
+        System.out.println("introdu varsta fetitei");
+        int x= scanez.nextInt();
+        System.out.println("introdu carsta fetitei");4
+        String y = scanez.next ();
+
+
 //
         Fetita alina = new Fetita();
+
+
 
         alina.nume="Alina";
         alina.varsta=13;
