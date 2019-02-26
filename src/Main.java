@@ -141,20 +141,27 @@ public class Main {
 //    double speed2 = DIS*0.000621371 / (HR * (MIN/60) + (SEC/60/60));
 //    System.out.println(speed2);
 //
-        System.out.println("Ex1: write the x number:");
-        int a = scanez.nextInt();
-        System.out.println(" write the y number:");
-        int b = scanez.nextInt();
+//        System.out.println("Ex1: write the x number:");
+//        int a = scanez.nextInt();
+//        System.out.println(" write the y number:");
+//        int b = scanez.nextInt();
+        Scanner scan = new Scanner(System.in);
         Logic logic = new Logic();
-                logic.checkNumber(a,b);
+//        logic.checkNumber(a,b);
+        Calculator calc = new Calculator();
+        calc.checkNumberIfIsN(2);
 
         System.out.println(" Exercitiul 1 finalizat");
 
         System.out.println(" Ex 2. Introdu numele cele mai tari companii de IT learning");
-
-        exercitiu2();
+        String a = scan.nextLine();
+        logic.compareStrings(a,"Fast Track");
 
         System.out.println(" Ex 3. Introdu un numar natural, daca e cuprins intre 2 si 8 va fi printat");
+        System.out.println("Introdu un numar");
+
+        double nr = scan.nextDouble();
+        logic.exercitiu3(nr);
 
 
 
@@ -163,24 +170,14 @@ public class Main {
 
         System.out.println(ale.getNume());
 
+
+        System.out.println(" Ex 4");
+        System.out.println("Introdu o companie de IT");
+        System.out.println("Introdu un numar natural");
+        String c = scan.nextLine();
+        logic.compareStrings(c,"Fast Track");
     }
 
-
-
-
-
-   public static void exercitiu2 () {
-       Scanner scan = new Scanner(System.in);
-       String aa = scan.next();
-       String b = new String("FastTrack");
-       if (aa.equals(b))
-           System.out.println("Learning text comparison");
-       else {
-           System.out.println("Got to try some more");
-       }
-
-
-    }
     public static void exercitiu3 (){
         System.out.println("Introdu un numar");
         Scanner scan = new Scanner(System.in);
