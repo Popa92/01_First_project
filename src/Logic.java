@@ -33,16 +33,21 @@ public class Logic extends Calculator {
             System.out.println("Numarul nu corespunde");
         }
        }
-    public void compareStringsAndNR(String c, String d){
-        if(c.contentEquals(d)){
+    public void compareStringsAndNR(String c, String d, int e) {
+        if (c.contentEquals(d)) {
             System.out.println("Strings match");
-            if ()
+            if ((c.contentEquals(d)) && (e < 3)) {
+            } else {
+                System.out.println("The strings don't match");
+            }
         }
-        else {
-            System.out.println("The strings don't match");
-        }
-    }
 
 
     }
+    public void countBackwards (int q, int w){
+        for (int i = q; i>=w; i--){
+            System.out.println(i);
+        }
+    }
+}
 

@@ -145,45 +145,98 @@ public class Main {
 //        int a = scanez.nextInt();
 //        System.out.println(" write the y number:");
 //        int b = scanez.nextInt();
-        Scanner scan = new Scanner(System.in);
+//        Scanner scan = new Scanner(System.in);
         Logic logic = new Logic();
 //        logic.checkNumber(a,b);
-        Calculator calc = new Calculator();
-        calc.checkNumberIfIsN(2);
+//        Calculator calc = new Calculator();
+//        calc.checkNumberIfIsN(2);
+//
+//        System.out.println(" Exercitiul 1 finalizat");
+//
+//        System.out.println(" Ex 2. Introdu numele cele mai tari companii de IT learning");
+//        String a = scan.nextLine();
+//        logic.compareStrings(a,"Fast Track");
+//
+//        System.out.println(" Ex 3. Introdu un numar natural, daca e cuprins intre 2 si 8 va fi printat");
+//        System.out.println("Introdu un numar");
+//
+//        double nr = scan.nextDouble();
+//        logic.exercitiu3(nr);
+//
+//
+//
+//        Fetita ale = new Fetita();
+//        ale.setNume("ale");
+//
+//        System.out.println(ale.getNume());
+//
+//
+//        System.out.println(" Ex 4");
+//        System.out.println("Introdu o companie de IT");
+//        System.out.println("Introdu un numar natural");
+//        String c = scan.nextLine();
+//        logic.compareStrings(c,"Fast Track");
 
-        System.out.println(" Exercitiul 1 finalizat");
-
-        System.out.println(" Ex 2. Introdu numele cele mai tari companii de IT learning");
-        String a = scan.nextLine();
-        logic.compareStrings(a,"Fast Track");
-
-        System.out.println(" Ex 3. Introdu un numar natural, daca e cuprins intre 2 si 8 va fi printat");
-        System.out.println("Introdu un numar");
-
-        double nr = scan.nextDouble();
-        logic.exercitiu3(nr);
-
-
-
-        Fetita ale = new Fetita();
-        ale.setNume("ale");
-
-        System.out.println(ale.getNume());
-
-
-        System.out.println(" Ex 4");
-        System.out.println("Introdu o companie de IT");
-        System.out.println("Introdu un numar natural");
-        String c = scan.nextLine();
-        logic.compareStrings(c,"Fast Track");
-    }
-
-    public static void exercitiu3 (){
-        System.out.println("Introdu un numar");
         Scanner scan = new Scanner(System.in);
-        int nr = scan.nextInt();
+//        int w = scan.nextInt();
+//        Scanner scanner2 = new Scanner(System.in);
+//        int q = scan.nextInt();
+//        logic.countBackwards(w, q);
+//
+
+
+    sumAndAverageHundert(1);
+
+    SumAndAvrage(1,1,1);
+
+
+//        public static void exercitiu3 () {
+//            System.out.println("Introdu un numar");
+//            Scanner scan = new Scanner(System.in);
+//            int nr = scan.nextInt();
+
+
+
+        // printStars (printStars(););
+        //IAAAARRR NU STIU AICI SA PRINTEZ EXERCITIUL CU STELELE LUI PESTE
+        }
+
+    public static void sumAndAverageHundert (int i){
+        int rezultat = 0;
+        while (i <= 100) {
+            if (i % 2 != 0) {
+                rezultat = rezultat + i;
+
+            }
+            i++;
+
+        }
+        System.out.println(rezultat);
+    }
+
+    public static void printStars(String[]pss){
+        int s,d;
+        for(s=0;s<=0;s++){
+            for(d=1;d<=7-s;d++) System.out.println("*");
+            System.out.println("");
+        }
+
 
 
     }
-}
+    public static void SumAndAvrage (int s, int a, int n) {
+        s = 0;
+        a = 0;
+        n = 0;
+        for (int i = 1; i <= 100; i++) {
+
+            s = s + i;
+            n = n + 1;
+            a = s / n;
+            System.out.println(s);
+            System.out.println(a);
+        }
+    }
+    }
+
 
