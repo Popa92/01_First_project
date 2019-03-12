@@ -185,9 +185,15 @@ public class Main {
 //
 
 
-    sumAndAverageHundert(1);
-
-    SumAndAvrage(1,1,1);
+        Logic opLogic = new Logic();
+        System.out.println(opLogic.sumAndAverageHundredWhile());
+        System.out.println(opLogic.sumAndAverageXtoY());
+        opLogic.coza();
+//        opLogic.sumAndAverageHundred(1);
+//
+//        Calculator calc = new Calculator();
+//
+//        calc.sumAndAverage();
 
 
 //        public static void exercitiu3 () {
@@ -196,47 +202,11 @@ public class Main {
 //            int nr = scan.nextInt();
 
 
-
         // printStars (printStars(););
         //IAAAARRR NU STIU AICI SA PRINTEZ EXERCITIUL CU STELELE LUI PESTE
-        }
-
-    public static void sumAndAverageHundert (int i){
-        int rezultat = 0;
-        while (i <= 100) {
-            if (i % 2 != 0) {
-                rezultat = rezultat + i;
-
-            }
-            i++;
-
-        }
-        System.out.println(rezultat);
     }
 
-    public static void printStars(String[]pss){
-        int s,d;
-        for(s=0;s<=0;s++){
-            for(d=1;d<=7-s;d++) System.out.println("*");
-            System.out.println("");
-        }
 
-
-
-    }
-    public static void SumAndAvrage (int s, int a, int n) {
-        s = 0;
-        a = 0;
-        n = 0;
-        for (int i = 1; i <= 100; i++) {
-
-            s = s + i;
-            n = n + 1;
-            a = s / n;
-            System.out.println(s);
-            System.out.println(a);
-        }
-    }
-    }
+}
 
 

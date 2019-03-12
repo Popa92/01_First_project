@@ -1,6 +1,5 @@
 public class Fetita {
     String nume;
-    String anume;
     int varsta;
     float greutate;
     String nationaltate;
